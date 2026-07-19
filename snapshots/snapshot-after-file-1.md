@@ -146,7 +146,7 @@ Additional sighting: open curiosity about hidden middleman/retail margin structu
 **behavior:** Applies the same layered/hierarchical decomposition structure — an explicit outer-to-inner ordering with isolation between layers — across three structurally different problem types within this project: geography, technical architecture, and marketing communication.
 **evidence_tag:** inference.
 **evidence:**
-[1] Geography: "India Level General Problem -> South India focused problem -> Tamil Nadu focused problem -> Kongu Belt Specific problems" (line 2995-2999, his own summary of a structure he had directed be built)
+[1] Geography: "India Level General Problem -&gt; South India focused problem -&gt; Tamil Nadu focused problem -&gt; Kongu Belt Specific problems" (line 2995-2999, his own summary of a structure he had directed be built)
 [2] Technical architecture: "this entire engine operates as a system rather than a single entity through which we can use graceful degredation to isolate layers from influencing the final recommendation" (line ~4850)
 [3] Marketing/communication: "We could break down the value proposition you gave into cascading value proposition that reinforces each other for explaining to farmers" (line 5140)
 **process_position:** In each case the decomposition request is made before detailed content is filled in — the structure is specified first, then populated.
