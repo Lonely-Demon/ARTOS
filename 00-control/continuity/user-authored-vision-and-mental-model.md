@@ -353,3 +353,12 @@ The following clarification was added after the initial document was assembled. 
 > It's like an infintely expanding indefinitely feedbacking loop where everything feeds everything and everything depends on everything
 
 **Editorial clarification:** The example means that the enterprise cannot be represented adequately as a flat roster of agents or as a one-way top-down workflow. It must support recursive decomposition within each domain, cross-domain dependencies between domains, and bidirectional feedback between mission/management functions and specialist engineering functions. “Infinite” is treated as an unbounded extensibility requirement rather than a literal claim that execution must continue forever.
+
+
+## 19. Clarification: implicit mental picture and interpretation risk
+
+The user clarified why the intended system was difficult to communicate from the beginning. This is preserved verbatim.
+
+> This level of depth was what I was trying to explain to you from the 1st as a matter of fact. The thing is when i am explaining something I have a vauge mental picture of what it should be like but the problem is the examples and the way I convey stuff and all those things arent clearly conveying the mental picture and the other issue is interpretation on your side as wel
+
+This clarification is important because the examples are not necessarily complete specifications. They may be partial projections of a larger implicit structure. The user’s intent can therefore be lost in two directions: the expression may omit the structure that feels obvious to the user, and the assistant may overinterpret, simplify, or force the expression into a familiar abstraction.

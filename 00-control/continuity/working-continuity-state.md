@@ -405,3 +405,22 @@ This means the Universal Enterprise is not adequately represented as a flat agen
 The phrase “everything feeds everything and everything depends on everything” should be operationalised carefully. It does not mean every capability directly depends on every other capability. It means the system must be able to discover, represent, trace, and manage indirect dependencies as they emerge, while avoiding the false confidence of assuming that the initial decomposition is complete. The architecture therefore needs a recursive capability graph with multiscale views and dynamic dependency discovery, not merely a static tree plus a project task graph.
 
 This clarification changes the next architecture and kernel priorities. The operating kernel must eventually support capability nodes at arbitrary depth, interface and contract objects, dependency and influence edges, requirement/constraint propagation, impact analysis, stale-input detection, cross-domain decision negotiation, and event-driven feedback loops. These features should be developed incrementally through bounded slices rather than by attempting to enumerate every domain in advance.
+
+
+## 23. Interpretation protocol: implicit mental model versus expressed examples
+
+The user clarified that the depth recently revealed by the Mars rover example was present in the intended mental model from the beginning. The difficulty is that the user often holds a vague but rich mental picture, while the examples and informal explanations communicate only partial projections of it. A second source of distortion is assistant interpretation: the assistant may compress an example into a familiar abstraction, treat an illustration as a complete specification, impose a hierarchy where the user means a dependency network, or silently turn an ambition into a literal requirement.
+
+This is now a collaboration risk that must be managed explicitly. Examples should be treated as probes into a deeper model rather than as isolated requirements. For each important example, future reasoning should separate: the literal example; the structural pattern it may reveal; the possible boundaries of that pattern; alternative interpretations; contradictions or missing dimensions; and confidence in the interpretation. The assistant should not let the first abstraction become canonical merely because it is coherent.
+
+The revised collaboration protocol is:
+
+1. Preserve the user’s own wording and example in the user-authored mental-model file.
+2. State the assistant’s interpretation separately rather than presenting it as the user’s intent.
+3. Ask what deeper structure the example may be exposing: hierarchy, recursion, feedback, dependency, interface, authority, resource coupling, or something else.
+4. Test whether the example is illustrative, structural, normative, or a boundary condition.
+5. Look for omitted subdomains, cross-domain dependencies, feedback paths, and implications that the example presupposes.
+6. Record competing interpretations and unresolved ambiguity when routine clarification is unavailable.
+7. Revise the architecture when a later example reveals that an earlier abstraction was too shallow.
+
+The system should use deep collaborative discussion when the user is available, including opinions and constructive disagreement, but it must also be able to continue autonomously by preserving uncertainty and interpretation alternatives. The user-authored context document remains the record of the user’s expressed mental model; the working continuity file remains the record of the assistant’s current operational interpretation and its confidence or limitations.
