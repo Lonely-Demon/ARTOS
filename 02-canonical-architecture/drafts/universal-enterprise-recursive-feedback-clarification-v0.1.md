@@ -121,3 +121,34 @@ The system should also avoid turning every possible relationship into an active 
 [1]: ../../00-control/continuity/user-authored-vision-and-mental-model.md "User-Authored Vision and Mental Model"
 [2]: ../../00-control/continuity/working-continuity-state.md "Working Continuity State"
 [3]: universal-enterprise-blueprint-v2.0.md "Universal Enterprise Blueprint v2.0"
+
+
+## 8. Problem formation is itself a mission
+
+The enterprise must not assume that every project begins with a correctly framed problem. In startup formation, the first mission may be to discover, compare, and select a problem worth pursuing. That mission requires research, opportunity mapping, user and market understanding, technical feasibility, founder and team capability assessment, economics, competition, timing, regulation, resources, distribution, and other factors that may not be known at the beginning.
+
+The selection of those factors is itself a capability. A problem cannot be evaluated against variables that have not been discovered, and brainstorming cannot be treated as independent of its foundation inputs. The enterprise must therefore support a preparatory loop that asks what information, perspectives, constraints, and criteria are needed before useful problem generation and selection can begin.
+
+The problem-formation path may contain the following recursive stages:
+
+| Stage | Purpose |
+|---|---|
+| Foundation formation | Establish the context, domain, known constraints, initial evidence, mission intent, available capabilities, and information gaps needed to begin useful exploration. |
+| Opportunity and problem discovery | Research candidate needs, failure modes, unmet demand, scientific or technical opportunities, and affected stakeholders. |
+| Factor discovery | Identify the variables that should influence selection, including expertise, difficulty, market size, CAC, competition, cost, timing, regulation, risk, and strategic fit. |
+| Candidate generation | Produce problem hypotheses and alternative framings under explicit assumptions. |
+| Adversarial evaluation | Challenge novelty, feasibility, demand, economics, safety, legality, execution capability, and hidden dependencies. |
+| Problem selection | Select, defer, combine, reframe, or reject candidate problems with traceable rationale and residual uncertainty. |
+| Deepening and solution formation | Activate market research, competitor analysis, user research, technical exploration, solution alternatives, product definition, implementation, and validation. |
+
+This is not a fixed linear waterfall. New evidence may reveal that the selected problem was poorly framed, that a factor was missing, or that a supposedly attractive opportunity is infeasible. The enterprise must be able to return to foundation formation, factor discovery, or problem selection without losing the decision history.
+
+## 9. Deliberative teams of models
+
+For problem formation and other high-ambiguity or high-consequence reasoning tasks, a single agent or model should not automatically be treated as sufficient. The system should be able to assemble a deliberative team of models or agents with differentiated roles, such as opportunity discovery, domain research, market analysis, technical feasibility, economics, adversarial criticism, assumption auditing, and synthesis.
+
+The value of a model team is not simply the number of models. Each participant must have a defined perspective, information boundary, task contract, evidence obligation, and criticism duty. The deliberation record should preserve independent or semi-independent hypotheses, disagreements, minority objections, evidence conflicts, convergence reasons, and unresolved questions. A synthesizer must not erase disagreement merely to produce a cleaner answer.
+
+Model plurality must also be treated cautiously. Multiple agents based on the same model, prompt, source set, or hidden assumption do not automatically provide independent confirmation. The governance spine should track the basis of apparent independence and distinguish genuine diversity of evidence or reasoning from duplicated outputs.
+
+The kernel will eventually require first-class objects for deliberation sessions, participant roles, hypothesis sets, argument or objection links, evidence requests, independence declarations, synthesis decisions, and unresolved dissent. These should remain review-only until a human or authorised governance process accepts the resulting decision.
