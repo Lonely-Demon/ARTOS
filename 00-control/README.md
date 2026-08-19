@@ -9,6 +9,7 @@ This directory governs how ARTOS is maintained. It is intentionally separate fro
 | `repository-manifest.md` | What each ARTOS area contains and which evidence role it serves. |
 | `file-placement-policy.md` | Where new conversations, research, decisions, code, tests, outputs, and continuity updates belong. |
 | `continuity/working-continuity-state.md` | Durable state for resumption after context loss or session change. |
+| `continuity/user-authored-vision-and-mental-model.md` | Faithful assembly of the user’s own stated context and vision, distinct from assistant synthesis. |
 
 ## Authority order
 

@@ -7,7 +7,7 @@
 
 | Area | Current contents | Canonical role |
 |---|---|---|
-| `00-control/` | Governance, manifest, placement policy, durable continuity. | Control and resumption authority. |
+| `00-control/` | Manifest, file-placement policy, organization report, active continuity state, and user-authored vision/mental-model record. | Control and resumption authority. |
 | `01-source-archive/` | 9 original project conversations, 9 snapshots, 2 original consolidation documents. | Provenance archive. |
 | `02-canonical-architecture/` | Blueprint versions 0, 1.1, 2.0; capability, project assembly, governance, subsystem integration, staged construction; output contract. | Universal Enterprise architecture. |
 | `03-enterprise-software-lifecycle/` | Lifecycle versions 1, 1.1, 2.0; assurance operations; research corpus and findings. | Software subsystem and its research basis. |
@@ -34,6 +34,7 @@ The sequential snapshots remain under `01-source-archive/snapshots/` in their or
 | Operating-kernel contract | `05-operating-kernel/contracts/minimum-operational-contract-v0.2.md` | Bounded implementation contract. |
 | Operating-kernel implementation | `05-operating-kernel/implementation/` | Local reference slice; not production-ready. |
 | Durable continuity | `00-control/continuity/working-continuity-state.md` | Current project state. |
+| User-authored context | `00-control/continuity/user-authored-vision-and-mental-model.md` | Faithful assembly of the user’s own stated vision and mental model; not an assistant interpretation. |
 
 ## Known generated or derived material
 

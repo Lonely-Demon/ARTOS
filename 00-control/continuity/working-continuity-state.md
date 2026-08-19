@@ -381,3 +381,12 @@ The repository now uses the following stable information architecture:
 A repository manifest and file-placement policy were added under `00-control/`. Directory README files explain purpose, authority, provenance, and evidence boundaries. The reorganized implementation tests pass: 20 tests completed successfully from `05-operating-kernel/implementation/`. The reorganized TabVolt calibration also completed successfully with 22 typed links, 95 events, a valid event chain, and all coverage checks passing. The calibration script was repaired to use repository-relative imports and outputs.
 
 Runtime databases, Python bytecode, temporary logs, and other reproducible execution artefacts remain excluded by `.gitignore`. Future work must follow the placement policy and reconcile sandbox-created material into ARTOS before it is considered canonical.
+
+
+## 21. User-authored vision and mental-model document
+
+The user requested a second continuity artefact alongside the operational continuity state: a coherent document containing the relevant context and mental model in the user’s own words, rather than an assistant interpretation.
+
+The document is `00-control/continuity/user-authored-vision-and-mental-model.md`. It is a thematic assembly, not a raw transcript. User-authored statements are preserved inside blockquotes, while headings and short connective passages are editorial structure. The document distinguishes itself from this continuity state: this file records synthesized operational project state, while the new document preserves user-authored intent, examples, preferences, constraints, quality benchmark, universal-enterprise mental model, desired workflow, software lifecycle expectations, evidence discipline, continuity requirements, and negative requirements.
+
+The document contains 74 quoted user-authored passages and references the preserved ARTOS source conversations, snapshots, and consolidation files. It explicitly states that “universal,” “world-class,” “almost 100% perfect,” and similar phrases are ambition and direction, not unsupported guarantees. The original source conversations remain authoritative for exact chronology and surrounding context.

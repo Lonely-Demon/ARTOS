@@ -12,11 +12,12 @@ A new session should read the following in order:
 |---:|---|---|
 | 1 | [`00-control/README.md`](00-control/README.md) | Repository governance and navigation rules. |
 | 2 | [`00-control/continuity/working-continuity-state.md`](00-control/continuity/working-continuity-state.md) | Durable project state, decisions, residual gaps, and next action. |
-| 3 | [`01-source-archive/consolidation/operational-extract.md`](01-source-archive/consolidation/operational-extract.md) | Compact collaboration and reasoning model. |
-| 4 | [`01-source-archive/consolidation/comprehensive-report.md`](01-source-archive/consolidation/comprehensive-report.md) | Detailed evidence-reconciled collaboration model. |
-| 5 | [`02-canonical-architecture/drafts/universal-enterprise-blueprint-v2.0.md`](02-canonical-architecture/drafts/universal-enterprise-blueprint-v2.0.md) | Current canonical universal-enterprise architecture baseline. |
-| 6 | [`03-enterprise-software-lifecycle/enterprise-software-lifecycle-v2.0.md`](03-enterprise-software-lifecycle/enterprise-software-lifecycle-v2.0.md) | Current canonical software lifecycle subsystem. |
-| 7 | [`05-operating-kernel/README.md`](05-operating-kernel/README.md) | Executable reference implementation and its boundaries. |
+| 3 | [`00-control/continuity/user-authored-vision-and-mental-model.md`](00-control/continuity/user-authored-vision-and-mental-model.md) | Faithful assembly of the user’s own stated vision, constraints, preferences, and mental model. |
+| 4 | [`01-source-archive/consolidation/operational-extract.md`](01-source-archive/consolidation/operational-extract.md) | Compact collaboration and reasoning model. |
+| 5 | [`01-source-archive/consolidation/comprehensive-report.md`](01-source-archive/consolidation/comprehensive-report.md) | Detailed evidence-reconciled collaboration model. |
+| 6 | [`02-canonical-architecture/drafts/universal-enterprise-blueprint-v2.0.md`](02-canonical-architecture/drafts/universal-enterprise-blueprint-v2.0.md) | Current canonical universal-enterprise architecture baseline. |
+| 7 | [`03-enterprise-software-lifecycle/enterprise-software-lifecycle-v2.0.md`](03-enterprise-software-lifecycle/enterprise-software-lifecycle-v2.0.md) | Current canonical software lifecycle subsystem. |
+| 8 | [`05-operating-kernel/README.md`](05-operating-kernel/README.md) | Executable reference implementation and its boundaries. |
 
 ## Repository map
 
