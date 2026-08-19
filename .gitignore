@@ -1,5 +1,5 @@
 # Python runtime artefacts
-__pycache__/
+**/__pycache__/
 *.py[cod]
 
 # Local kernel state and temporary databases
@@ -10,4 +10,5 @@ __pycache__/
 *-test-output.txt
 
 # Generated local calibration data that is reproducible from the script
-calibration-output/*.sqlite3
+**/calibration-output/*.sqlite3
+**/calibrations/**/outputs/*.sqlite3

@@ -1,0 +1,69 @@
+{
+  "calibration": "TabVolt retrospective",
+  "project_id": "prj_1c04f9ada6f54525",
+  "evidence_boundary": "Historical conversation record and its reported local observations; not independent validation.",
+  "entity_counts": {
+    "objective": 1,
+    "factor": 8,
+    "evidence": 5,
+    "decision": 4,
+    "risk": 4,
+    "work_package": 4,
+    "claim": 3,
+    "gate": 3,
+    "handoff": 1
+  },
+  "status_counts": {
+    "factor": {
+      "open": 1,
+      "treated": 7
+    },
+    "evidence": {
+      "design_inference": 2,
+      "measured_locally": 3
+    },
+    "decision": {
+      "accepted": 4
+    },
+    "risk": {
+      "open": 2,
+      "mitigated": 2
+    },
+    "work_package": {
+      "accepted": 4
+    },
+    "claim": {
+      "open": 3
+    },
+    "gate": {
+      "conditional_proceed": 3
+    },
+    "handoff": {
+      "acknowledged": 1
+    }
+  },
+  "link_count": 22,
+  "event_count": 95,
+  "event_chain_valid": true,
+  "coverage_checks": {
+    "objective_to_factor": true,
+    "evidence_to_claim": true,
+    "decision_to_risk": true,
+    "work_package_and_handoff": true,
+    "conditional_gates": 3,
+    "claim_limitations_preserved": true
+  },
+  "observed_framework_friction": [
+    "Retrospective mapping requires a clear distinction between historical conversation evidence and independent verification.",
+    "A factor can be both treated and still open; status and evidence state must remain separate.",
+    "A project graph needs typed links because the same object can support, challenge, derive, or address another object.",
+    "The framework records why the architecture changed after failure, which was not reliably visible in a raw conversation alone.",
+    "Gate conditions preserve unresolved energy-attribution and independent-review gaps instead of hiding them behind completion."
+  ],
+  "residual_gaps": [
+    "No controlled energy or battery measurement was performed in this retrospective.",
+    "No current browser API re-validation was performed.",
+    "No independent reviewer or external domain expert participated.",
+    "No actual TabVolt source code was imported into the kernel."
+  ]
+}

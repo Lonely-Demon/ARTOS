@@ -1,6 +1,6 @@
 {
   "calibration": "TabVolt retrospective",
-  "project_id": "prj_db282f425ba849ac",
+  "project_id": "prj_1c04f9ada6f54525",
   "evidence_boundary": "Historical conversation record and its reported local observations; not independent validation.",
   "entity_counts": {
     "objective": 1,
@@ -15,8 +15,8 @@
   },
   "status_counts": {
     "factor": {
-      "treated": 7,
-      "open": 1
+      "open": 1,
+      "treated": 7
     },
     "evidence": {
       "design_inference": 2,
@@ -26,8 +26,8 @@
       "accepted": 4
     },
     "risk": {
-      "mitigated": 2,
-      "open": 2
+      "open": 2,
+      "mitigated": 2
     },
     "work_package": {
       "accepted": 4

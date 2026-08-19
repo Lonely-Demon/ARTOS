@@ -292,28 +292,29 @@ The user authorised autonomous continuation without routine feedback and instruc
 
 ### Implemented reference workspace
 
-A new workspace was created at `/home/ubuntu/agent_manus_review/operating-kernel-reference/`.
+The reference implementation is maintained in the ARTOS repository under `05-operating-kernel/`.
 
-The minimum operational contract is in `minimum-operational-contract-v0.2.md`. It defines the bounded first slice, canonical objects, evidence states, transitions, gates, traceability links, continuity packet, safety boundary, acceptance tests, and explicit non-goals.
+The minimum operational contract is in `05-operating-kernel/contracts/minimum-operational-contract-v0.2.md`.
+ It defines the bounded first slice, canonical objects, evidence states, transitions, gates, traceability links, continuity packet, safety boundary, acceptance tests, and explicit non-goals.
 
 The implementation includes:
 
-- `kernel.py`: SQLite-backed current projection, append-only event chain, transactions, typed entities, typed links, lifecycle transitions, gate advancement, evidence-state controls, tombstones, event verification, reconstruction, and continuity export.
-- `workflow.py`: work-package creation, assignment, execution, submission, review, handoffs, acknowledgements, gates, and continuation helpers.
-- `worker_contract.py`: transport-neutral task-package and worker-result schema; workers are review-only and cannot directly write canonical state, approve, upgrade claims, or perform external side effects.
-- `api.py`: unauthenticated localhost-only FastAPI adapter for local development; it must not be exposed remotely in this form.
-- `cli.py`: local command-line entry points for demo seeding, project creation, packets, events, and integrity checks.
-- `test_kernel.py` and `test_api.py`: acceptance, workflow, worker contract, API, and adversarial regression tests.
+- `05-operating-kernel/implementation/kernel.py`: SQLite-backed current projection, append-only event chain, transactions, typed entities, typed links, lifecycle transitions, gate advancement, evidence-state controls, tombstones, event verification, reconstruction, and continuity export.
+- `05-operating-kernel/implementation/workflow.py`: work-package creation, assignment, execution, submission, review, handoffs, acknowledgements, gates, and continuation helpers.
+- `05-operating-kernel/implementation/worker_contract.py`: transport-neutral task-package and worker-result schema; workers are review-only and cannot directly write canonical state, approve, upgrade claims, or perform external side effects.
+- `05-operating-kernel/implementation/api.py`: unauthenticated localhost-only FastAPI adapter for local development; it must not be exposed remotely in this form.
+- `05-operating-kernel/implementation/cli.py`: local command-line entry points for demo seeding, project creation, packets, events, and integrity checks.
+- `05-operating-kernel/implementation/test_kernel.py` and `test_api.py`: acceptance, workflow, worker contract, API, and adversarial regression tests.
 
 ### Calibration and evidence
 
-`calibrate_tabvolt.py` maps the historical TabVolt project record into the kernel. It creates 1 objective, 8 factors, 5 evidence objects, 4 decisions, 4 risks, 4 work packages, 3 claims, 3 gates, and 1 handoff with 22 typed links and 95 events. The calibration passes coverage checks and preserves the distinction between historical participant-observed local measurements, design inferences, open claims, and explicitly excluded exact-energy claims. Generated outputs are in `calibration-output/`.
+`05-operating-kernel/calibrations/tabvolt/calibrate_tabvolt.py` maps the historical TabVolt project record into the kernel. It creates 1 objective, 8 factors, 5 evidence objects, 4 decisions, 4 risks, 4 work packages, 3 claims, 3 gates, and 1 handoff with 22 typed links and 95 events. The calibration passes coverage checks and preserves the distinction between historical participant-observed local measurements, design inferences, open claims, and explicitly excluded exact-energy claims. Generated outputs are in the case `outputs/` directory and are not runtime source.
 
 This is a retrospective calibration, not independent validation of TabVolt or proof that the framework improves project quality.
 
 ### Open-source component audit
 
-The current public GitHub repositories and README material for DeerFlow, OpenHands, OpenManus, Hermes Agent, and OpenClaw were inspected. The audit is in `open-source-component-audit-v0.md`; the evaluation contract and provisional matrix are in `component-evaluation-matrix-v0.1.md`.
+The current public GitHub repositories and README material for DeerFlow, OpenHands, OpenManus, Hermes Agent, and OpenClaw were inspected. The audit is in `05-operating-kernel/evaluations/open-source-component-audit-v0.md`; the evaluation contract and provisional matrix are in `05-operating-kernel/evaluations/component-evaluation-matrix-v0.1.md`.
 
 Current role hypothesis:
 
@@ -327,9 +328,11 @@ None is allowed to replace the kernel’s canonical state, authority, evidence a
 
 ### Adversarial repair and validation
 
-The adversarial report is `adversarial-test-report-v0.1.md`. Initial tests exposed and repaired cross-project link contamination, tombstone audit visibility, draft-project gate activation, and SQLite thread incompatibility in the local API. A final run passes 20 tests. The only remaining test-run warning is a dependency deprecation warning from the installed Starlette/httpx test client; it does not affect the test result but should be cleaned in a future dependency refresh.
+The adversarial report is `05-operating-kernel/reports/validation/adversarial-test-report-v0.1.md`.
+ Initial tests exposed and repaired cross-project link contamination, tombstone audit visibility, draft-project gate activation, and SQLite thread incompatibility in the local API. A final run passes 20 tests. The only remaining test-run warning is a dependency deprecation warning from the installed Starlette/httpx test client; it does not affect the test result but should be cleaned in a future dependency refresh.
 
-`worker_smoke.py` runs a synthetic, deterministic adapter-boundary test. It confirms that a compliant worker result remains review-only and rejects claim upgrades, external side effects, project identity mismatch, and missing reproducibility metadata. It explicitly does not execute DeerFlow, OpenHands, Hermes, OpenClaw, or OpenManus and does not measure their quality.
+`05-operating-kernel/implementation/worker_smoke.py` runs a synthetic, deterministic adapter-boundary test.
+ It confirms that a compliant worker result remains review-only and rejects claim upgrades, external side effects, project identity mismatch, and missing reproducibility metadata. It explicitly does not execute DeerFlow, OpenHands, Hermes, OpenClaw, or OpenManus and does not measure their quality.
 
 ### Current residual gaps
 
@@ -342,9 +345,10 @@ Current stopping judgement for this increment: enough implementation exists to m
 
 The user instructed that all future work for this project should use `https://github.com/Lonely-Demon/ARTOS`, which contains the original conversation files, snapshots, and consolidation materials. ARTOS is now the canonical project workspace rather than the sandbox-only review directory.
 
-The repository was cloned and audited. Its original archive contains nine project conversation exports, nine sequential snapshots, `consolidation/comprehensive-report.md`, and `consolidation/operational-extract.md`. The repository is currently a document/conversation archive with the new reference implementation added under `operating-kernel-reference/`.
+The repository was cloned and audited. Its original archive contains nine project conversation exports, nine sequential snapshots, `01-source-archive/consolidation/comprehensive-report.md`, and `01-source-archive/consolidation/operational-extract.md`. The repository now contains the organized reference implementation under `05-operating-kernel/`.
 
-The autonomous operating-kernel reference, calibration outputs, component audit, tests, worker smoke harness, README, and this continuity state were imported into ARTOS. The repository copy passed the same 20-test local suite. A repository README was added to explain the canonical archive and evidence boundaries.
+The autonomous operating-kernel reference, calibration outputs, component audit, tests, worker smoke harness, README, and this continuity state were imported into ARTOS under the paths defined in `00-control/repository-manifest.md`.
+ The repository copy passed the same 20-test local suite. A repository README was added to explain the canonical archive and evidence boundaries.
 
 A cleaned branch was created and pushed:
 
@@ -353,3 +357,27 @@ A cleaned branch was created and pushed:
 - Pull request URL: `https://github.com/Lonely-Demon/ARTOS/pull/new/manus/operating-kernel-reference-v0.1`
 
 Runtime databases and Python bytecode were removed from version control and `.gitignore` was added. The next work should continue from the ARTOS branch/repository, and any future material created in the sandbox must be reconciled back into ARTOS before being treated as canonical.
+
+
+## 20. ARTOS repository organization pass
+
+The user requested that all files and data relevant to the project be kept organized properly in ARTOS. The repository was audited and reorganized without rewriting the original source archive.
+
+The original nine conversations remain under `01-source-archive/conversations/`, the nine snapshots remain under `01-source-archive/snapshots/`, and the original consolidation pair remains under `01-source-archive/consolidation/`. This preserves provenance while separating source evidence from later interpretation.
+
+The repository now uses the following stable information architecture:
+
+- `00-control/`: manifest, file-placement policy, and active continuity state.
+- `01-source-archive/`: immutable original conversations, snapshots, and original consolidation.
+- `02-canonical-architecture/`: Universal Enterprise blueprint versions and capability/assembly artefacts.
+- `03-enterprise-software-lifecycle/`: software lifecycle versions, assurance operations, research corpus, and findings.
+- `04-review-and-assurance/`: ten adversarial cycles, change log, and improvement cycles.
+- `05-operating-kernel/`: implementation, contracts, component evaluations, TabVolt calibration, and validation reports.
+- `06-collaboration-and-methodology/`: collaboration model, extraction protocols, reasoning artefacts, and methodology.
+- `07-project-reference-extracts/`: compact derived project navigation and NHAI workflow aids.
+- `08-experiments-and-projects/`: reserved location for future real-project calibrations and isolated worker experiments.
+- `09-release-artifacts/`: packaged exports that are never the only source copy.
+
+A repository manifest and file-placement policy were added under `00-control/`. Directory README files explain purpose, authority, provenance, and evidence boundaries. The reorganized implementation tests pass: 20 tests completed successfully from `05-operating-kernel/implementation/`. The reorganized TabVolt calibration also completed successfully with 22 typed links, 95 events, a valid event chain, and all coverage checks passing. The calibration script was repaired to use repository-relative imports and outputs.
+
+Runtime databases, Python bytecode, temporary logs, and other reproducible execution artefacts remain excluded by `.gitignore`. Future work must follow the placement policy and reconcile sandbox-created material into ARTOS before it is considered canonical.

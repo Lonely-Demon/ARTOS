@@ -1,39 +1,44 @@
 # ARTOS — Universal Virtual Enterprise Workspace
 
-ARTOS is the canonical repository workspace for the Universal Virtual Enterprise project. It contains the original project conversations, snapshots, consolidated collaboration model, and the first local-first operating-kernel reference implementation.
+ARTOS is the canonical repository for the Universal Virtual Enterprise project. It contains the original project evidence, the synthesized collaboration model, canonical architecture and lifecycle outputs, assurance records, the operating-kernel implementation, evaluations, calibrations, and durable continuity state.
 
-## Repository contents
+The repository is organized by **evidence role and lifecycle position**, not by the order in which files happened to be created. Numbered directories are intentional: they provide a stable navigation path for future sessions and agents.
 
-| Path | Role |
-|---|---|
-| Root Markdown files | Original project conversation exports covering NHAI, VitalNet, TabVolt, LegacyBridge, EcoFarm, and related work. |
-| `snapshots/` | Sequential reasoning snapshots preserved during the original synthesis process. |
-| `consolidation/comprehensive-report.md` | Detailed evidence-reconciled model of the user’s working style and collaboration requirements. |
-| `consolidation/operational-extract.md` | Compact reloadable operational extract for future sessions and agents. |
-| `operating-kernel-reference/` | Executable local-first reference slice of the Universal Enterprise operating kernel, workflow facade, API adapter, worker contract, tests, calibration, and audits. |
+## Start here
 
-## Canonical working rule
+A new session should read the following in order:
 
-Future work on the Universal Virtual Enterprise should begin by inspecting this repository, especially the operational extract, comprehensive report, relevant snapshots, and the latest operating-kernel implementation state. The original project exports are evidence and precedent; they are not automatically authoritative external facts.
+| Order | Path | Purpose |
+|---:|---|---|
+| 1 | [`00-control/README.md`](00-control/README.md) | Repository governance and navigation rules. |
+| 2 | [`00-control/continuity/working-continuity-state.md`](00-control/continuity/working-continuity-state.md) | Durable project state, decisions, residual gaps, and next action. |
+| 3 | [`01-source-archive/consolidation/operational-extract.md`](01-source-archive/consolidation/operational-extract.md) | Compact collaboration and reasoning model. |
+| 4 | [`01-source-archive/consolidation/comprehensive-report.md`](01-source-archive/consolidation/comprehensive-report.md) | Detailed evidence-reconciled collaboration model. |
+| 5 | [`02-canonical-architecture/drafts/universal-enterprise-blueprint-v2.0.md`](02-canonical-architecture/drafts/universal-enterprise-blueprint-v2.0.md) | Current canonical universal-enterprise architecture baseline. |
+| 6 | [`03-enterprise-software-lifecycle/enterprise-software-lifecycle-v2.0.md`](03-enterprise-software-lifecycle/enterprise-software-lifecycle-v2.0.md) | Current canonical software lifecycle subsystem. |
+| 7 | [`05-operating-kernel/README.md`](05-operating-kernel/README.md) | Executable reference implementation and its boundaries. |
 
-The repository is the project’s canonical source workspace. Local sandbox copies may be used for execution, but material implementation and continuity changes should be reconciled back into ARTOS rather than maintained only outside the repository.
+## Repository map
 
-## Current implementation state
-
-The operating-kernel reference is deliberately bounded. It supports project state, typed entities and links, append-only events, evidence states, claims, decisions, risks, work packages, handoffs, gates, continuation packets, a local API, and a review-only worker boundary. It is not yet a production multi-agent harness, secure remote service, multi-tenant system, or proof of universal domain competence.
-
-The current implementation has passed its local automated suite and a synthetic worker-boundary smoke test. The TabVolt calibration is retrospective and must not be interpreted as independent validation of either TabVolt or the larger framework.
+| Directory | Contents | Status |
+|---|---|---|
+| `00-control/` | Repository manifest, placement policy, continuity state, and governance. | Authoritative control layer. |
+| `01-source-archive/` | Original conversations, sequential snapshots, and original consolidation outputs. | Immutable provenance archive; do not rewrite source files. |
+| `02-canonical-architecture/` | Universal Enterprise architecture versions and capability/assembly drafts. | Architecture baselines and linked drafts. |
+| `03-enterprise-software-lifecycle/` | Enterprise software lifecycle versions, assurance operations, research corpus, and findings. | Lifecycle subsystem and supporting research. |
+| `04-review-and-assurance/` | Improvement cycles, ten adversarial cycles, change logs, and residual critiques. | Review and challenge record. |
+| `05-operating-kernel/` | Kernel implementation, contracts, worker evaluations, calibration, tests, and validation reports. | Executable reference system. |
+| `06-collaboration-and-methodology/` | Extraction protocols, reasoning-model artifacts, collaboration analysis, and methodology documents. | Supporting method and behavioural context. |
+| `07-project-reference-extracts/` | Compact NHAI extracts, workflow maps, archive skim indexes, and cross-project navigation aids. | Derived navigation and project precedent. |
+| `08-experiments-and-projects/` | Bounded project calibrations, isolated worker experiments, and their evidence packages. | Active validation and integration work. |
+| `09-release-artifacts/` | Versioned packaged releases and export bundles. | Generated deliverables; source remains elsewhere. |
 
 ## Evidence discipline
 
-The project preserves the following distinctions:
+The repository distinguishes **Verified**, **Measured locally**, **Estimated**, **Design inference**, **Hypothesis**, **Open**, and **Excluded** evidence states. Original conversations and generated reports are evidence of what was discussed or observed in their context; they are not automatically authoritative external facts. Synthetic tests and retrospective calibrations do not establish independent real-world validation.
 
-- **Verified:** supported by an appropriate external or independently checked source.
-- **Measured locally:** observed in the local implementation or historical project environment.
-- **Estimated:** calculated or modelled from stated assumptions.
-- **Design inference:** reasoned architecture or workflow proposal.
-- **Hypothesis:** plausible but not sufficiently tested.
-- **Open:** unresolved and requiring future evidence.
-- **Excluded:** a claim or path that must not be presented as established.
+The operating kernel is a local reference implementation, not yet a production multi-agent harness, secure remote service, multi-tenant system, or proof of universal domain competence.
 
-Synthetic tests, prototypes, generated documents, and historical conversation reports must never be presented as independent real-world validation.
+## Canonical working rule
+
+The repository is the project’s source of truth. Sandbox copies may be used for execution, but material implementation, research, generated reports, and continuity changes must be reconciled into ARTOS before they are treated as canonical. Runtime databases, Python bytecode, temporary logs, and other reproducible execution artefacts must remain untracked.

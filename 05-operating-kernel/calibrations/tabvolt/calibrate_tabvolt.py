@@ -1,7 +1,12 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+IMPLEMENTATION_DIR = Path(__file__).resolve().parents[2] / "implementation"
+if str(IMPLEMENTATION_DIR) not in sys.path:
+    sys.path.insert(0, str(IMPLEMENTATION_DIR))
 
 from kernel import OperatingKernel
 from workflow import (
@@ -15,7 +20,7 @@ from workflow import (
     submit_work_package,
 )
 
-OUT = Path(__file__).parent / "calibration-output"
+OUT = Path(__file__).parent / "outputs"
 DB = OUT / "tabvolt-retrospective.sqlite3"
 
 
