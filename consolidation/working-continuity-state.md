@@ -336,3 +336,20 @@ The adversarial report is `adversarial-test-report-v0.1.md`. Initial tests expos
 The reference system is not production-ready, remotely secure, multi-tenant, independently validated, domain-capable, or a complete multi-agent harness. It still lacks a formal policy engine, authentication and identity, secrets management, encryption and backup/recovery procedures, robust event-sourced rebuild semantics, semantic concurrent branch merge, real worker execution adapters, capability competence benchmarks, domain catalogues, human/external authority integration, and measured comparison against ordinary project workflows. These remain the next implementation priorities.
 
 Current stopping judgement for this increment: enough implementation exists to move from design-only work to an evidence-generating reference system. Further work should continue through controlled worker integration and project calibration rather than expanding the universal ontology.
+
+
+## 19. ARTOS is now the canonical repository workspace
+
+The user instructed that all future work for this project should use `https://github.com/Lonely-Demon/ARTOS`, which contains the original conversation files, snapshots, and consolidation materials. ARTOS is now the canonical project workspace rather than the sandbox-only review directory.
+
+The repository was cloned and audited. Its original archive contains nine project conversation exports, nine sequential snapshots, `consolidation/comprehensive-report.md`, and `consolidation/operational-extract.md`. The repository is currently a document/conversation archive with the new reference implementation added under `operating-kernel-reference/`.
+
+The autonomous operating-kernel reference, calibration outputs, component audit, tests, worker smoke harness, README, and this continuity state were imported into ARTOS. The repository copy passed the same 20-test local suite. A repository README was added to explain the canonical archive and evidence boundaries.
+
+A cleaned branch was created and pushed:
+
+- Branch: `manus/operating-kernel-reference-v0.1`
+- Commit: `1fa8859 Add operating kernel reference baseline`
+- Pull request URL: `https://github.com/Lonely-Demon/ARTOS/pull/new/manus/operating-kernel-reference-v0.1`
+
+Runtime databases and Python bytecode were removed from version control and `.gitignore` was added. The next work should continue from the ARTOS branch/repository, and any future material created in the sandbox must be reconciled back into ARTOS before being treated as canonical.
