@@ -29,7 +29,7 @@ The sequential snapshots remain under `01-source-archive/snapshots/` in their or
 | Baseline | Path | Status |
 |---|---|---|
 | Collaboration model | `01-source-archive/consolidation/operational-extract.md` plus `comprehensive-report.md` | Active source-derived model. |
-| Universal Enterprise architecture | `02-canonical-architecture/drafts/universal-enterprise-blueprint-v2.0.md` plus `universal-enterprise-recursive-feedback-clarification-v0.1.md` | Current design baseline plus the clarified recursive-feedback addendum; still an architectural specification. |
+| Universal Enterprise architecture | `02-canonical-architecture/drafts/universal-enterprise-blueprint-v2.0.md` plus the recursive-feedback addendum | Current design baseline plus the substantive recursive-feedback clarification; still an architectural specification. |
 | Enterprise software lifecycle | `03-enterprise-software-lifecycle/enterprise-software-lifecycle-v2.0.md` | Current lifecycle baseline; still requires implementation validation. |
 | Operating-kernel contract | `05-operating-kernel/contracts/minimum-operational-contract-v0.2.md` | Bounded implementation contract. |
 | Operating-kernel implementation | `05-operating-kernel/implementation/` | Local reference slice; not production-ready. |
