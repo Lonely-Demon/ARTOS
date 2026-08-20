@@ -437,3 +437,23 @@ After a problem is selected, the enterprise activates deeper market research, co
 The user also proposed that teams of models should argue with one another rather than relying on a single model for problem formation and difficult reasoning. This should be interpreted as structured multi-model deliberation, not uncontrolled model voting. Different models or agents should have explicit roles, information boundaries, hypotheses, criticism duties, evidence requirements, and a synthesis process that preserves disagreement and minority objections. Model plurality is useful only when it produces differentiated reasoning and better coverage; many copies of the same failure mode do not create genuine independence.
 
 The architecture and harness must therefore support a `problem-formation` mission mode in which foundation inputs, research questions, factor catalogues, candidate problem statements, opportunity hypotheses, adversarial objections, and decision criteria are first-class objects. It must also support deliberation assemblies that can be composed recursively: a problem-discovery team may contain domain researchers, market researchers, customer researchers, technical feasibility specialists, finance/economics specialists, and adversarial critics, each of which may activate deeper capabilities.
+
+
+## IDREA robotics task correction — 20 August 2026
+
+The referenced task `80HbnErd57jvZt90n0TbkD` was reviewed in full, including its 142-event conversation transcript and five attached artefacts. It concerns the IDREA NeX-Gen Robotics Challenge and is an urgent competition project with a user-stated Round 1 deadline, a maximum ten-content-slide presentation requirement, and a user-stated maximum two-page abstract requirement whose official status remains to be re-verified.
+
+The referenced task repeatedly failed by jumping from literal rulebook requirements to adhesion mechanisms, then to cross-domain dependencies, before completing problem framing, evidence-led operating-context reconstruction, landscape mapping, and factor/evidence/dependency cataloguing. The user explicitly corrected this sequencing and stated that thorough research is mandatory. The inherited candidate mechanisms remain quarantined hypotheses rather than selected architecture.
+
+The project has now been re-established under `08-experiments-and-projects/idrea-nexgen-robotics-challenge/` in ARTOS. The official IDREA challenge page and technical rulebook are the primary sources for competition facts. The referenced task artefacts are preserved under the project `source/` directory as historical working material. The new baseline documents separate official requirements, user intent, inherited hypotheses, design inferences, and open questions.
+
+The corrected current phase is Stage 0–2 of the Universal Enterprise workflow: accept and frame the supplied challenge, establish the literal fact base, reconstruct the actual problem and operating context through research, and map the relevant decision landscapes. Architecture selection is not authorised. Continuity should be updated only after substantive phases or concrete decisions, not after every user turn.
+
+The browser takeover path was attempted but abandoned after the sandbox Manus session required login and Cloudflare interfered. No user credentials were requested or received, and no external submission or irreversible project action was taken. The project will proceed from the reviewed task materials, official public sources, and ARTOS.
+
+Relevant project files:
+
+- `08-experiments-and-projects/idrea-nexgen-robotics-challenge/README.md`
+- `08-experiments-and-projects/idrea-nexgen-robotics-challenge/baseline/project-frame-and-evidence-boundary.md`
+- `08-experiments-and-projects/idrea-nexgen-robotics-challenge/baseline/corrected-operating-sequence.md`
+- `08-experiments-and-projects/idrea-nexgen-robotics-challenge/source/referenced-task-80HbnErd57jvZt90n0TbkD/`
